@@ -1,0 +1,69 @@
+body{
+	color: #352b20;
+	font-family: ProximaNovaReg;
+}
+
+.bg-orange{
+	background-color: #ff7f50 !important;
+}
+
+.bg-brown{
+	background-color: #514444 !important;
+}
+
+.white{
+	color: #ffffff !important;
+}
+
+.orange{
+	color: #ff7f50 !important;
+}
+
+.brown{
+	color: #514444 !important;
+}
+
+.resize-h-200{
+	height: 200px;
+	width: auto;
+}
+
+.resize-w-200{
+	width: 200px;
+	height: auto;
+}
+
+.h1.left, .desc.left: {
+	text-align: left !important;
+}
+
+.btn{
+	font-family: GothamRounded-Medium;
+	text-align: center;
+}
+
+.falink{
+	font-size: 20px;
+}
+
+
+/* EMBEDED FONTS */
+@font-face {
+    font-family: GothamRounded-Medium;
+    src: url('../fonts/GothamRounded-Medium.otf');
+}
+
+@font-face {
+    font-family: Bariol_Regular;
+    src: url('../fonts/Bariol_Regular.otf');
+}
+
+@font-face {
+    font-family: Proxima Nova Sbold;
+    src: url('../fonts/Proxima Nova Sbold.otf');
+}
+
+@font-face {
+    font-family: ProximaNovaReg;
+    src: url('../fonts/ProximaNovaReg.otf');
+}
