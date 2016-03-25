@@ -1,14 +1,37 @@
-.nav.homepage{
-	height: 100px;
-	background-image: url('../img/meetchangelogo.png');
-	background-size: 250px 46px;
+.nav.profilepage{
+	height: 60px;
+	background-image: url('../img/meetchangeicon.png');
+	background-size: 35px 35px;
 	background-repeat: no-repeat;
-    background-position: left 50px center;
+    background-position: left 80px center;
     box-shadow: 0px 2px 15px rgba(255,255,255,0.15);
 	-moz-box-shadow: 0px 2px 15px rgba(255,255,255,0.15); 
 	-webkit-box-shadow: 0px 2px 15px rgba(255,255,255,0.15); 
-	position: relative;
+	/*position: fixed;*/
 	z-index: 10;
+}
+
+.nav.subnav{
+	height: 45px;
+}
+
+.subnav a{
+	font-weight: bold;
+	color: #514444 !important;
+}
+
+.form-search{
+	margin-top: 13px;
+}
+
+.subnav > div > .navbar-nav > li > a {
+    padding-top: 12px !important;
+    padding-bottom: 13px !important;
+    margin-top: -2px;
+}
+
+.subnav > div > .navbar-nav > li > a:hover{
+	background-color: #c6bba2 !important;
 }
 
 .section{
@@ -16,7 +39,7 @@
 	padding-bottom: 35px;
 }
 
-.section.register{
+.section.cover{
 	background-image: url('../img/bg.jpg');
 	background-repeat:no-repeat;
 	-webkit-background-size:cover;
@@ -25,7 +48,10 @@
 	background-size:cover;
 	/*background-position:center;*/
 	/*margin-top: 95px;*/
-	height: 700px;
+	height: 300px;
+	-webkit-box-shadow: inset 0px -200px 73px -100px rgba(0,0,0,0.65);
+	-moz-box-shadow: inset 0px -200px 73px -100px rgba(0,0,0,0.65);
+	box-shadow: inset 0px -200px 73px -100px rgba(0,0,0,0.65);
 }
 
 .section.why{

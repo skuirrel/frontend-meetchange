@@ -11,6 +11,18 @@ body{
 	background-color: #514444 !important;
 }
 
+.bg-lightgrey{
+	background-color: #dddddd !important;
+}
+
+.bg-lightbrown{
+	background-color: #efeae6 !important;
+}
+
+.bg-yellowbrown{
+	background-color: #c6bba2 !important;
+}
+
 .white{
 	color: #ffffff !important;
 }
