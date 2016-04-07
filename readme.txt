@@ -6,6 +6,5 @@ homepage
 	|_ search.css
 
 profile-individu-profil
+	|_ main.css
 	|_ profile.css
-	|_ profile-menu.css
-	

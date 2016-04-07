@@ -112,6 +112,16 @@ body{
 	/*text-align: right;*/
 }
 
+button, button:active, button:visited, button:focus, a, a:active, a:visited, a:focus {
+	outline: none !important;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+
+
 /* EMBEDED FONTS */
 @font-face {
     font-family: GothamRounded-Medium;
