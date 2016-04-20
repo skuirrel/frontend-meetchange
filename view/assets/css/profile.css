@@ -47,8 +47,12 @@ ul.nav li.active a, ul.nav li a:hover {
     color: #ffffff;
 }
 
-ul.nav li a {
+ul.nav li a, .link-orange a {
     color: #514444;;
+}
+
+.link-orange a:hover{
+	color: #ff7f50 !important;
 }
 
 .profile-photo{
@@ -119,7 +123,7 @@ ul.nav li a {
 	color: #352b20;
 }
 
-.panel-body > div > a:hover, .news > span > a, .agenda-list > div > div > div > a:hover {
+.panel-body > div > a:hover, .news > span > a, .agenda-list > div > div > div > a:hover, .content-link > a {
 	color: #ff7f50;
 	text-decoration: none;
 }
@@ -128,7 +132,7 @@ ul.nav li a {
 	color: #352b20;
 }
 
-.news > span > a:hover{
+.news > span > a:hover, .content-link > a:hover{
 	font-weight: bold;
 }
 
@@ -279,3 +283,38 @@ img.float-left{
 .panel-body-expand{
 	padding-bottom: 25px;
 }
+
+.organisasi-item, .content-item{
+	padding-bottom: 15px;
+	/*border-bottom: 1px solid #cccccc;*/
+}
+
+.organisasi-item:not(:first-child), .content-item:not(:first-child)  {
+    padding-top: 15px;
+}
+
+.line{
+	height:1px;
+	background:#cccccc;
+	border-bottom:1px solid #cccccc;
+	margin: 0px -15px;
+}
+
+/*.content-item > div > .desc{
+	display: block; /* Fallback for non-webkit
+  display: -webkit-box;
+  max-width: 300px;
+  height: 67.2px;  Fallback for non-webkit 
+  margin: 0 auto;
+  font-size: 14;
+  line-height: 1.2;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}*/
+
+.tag-karya{
+	margin-bottom: 10px;
+}
+

@@ -43,8 +43,17 @@ body{
 	color:  #cccccc !important;
 }
 
+.grey{
+	color: #999999 !important;
+}
+
 .resize-h-200{
 	height: 200px;
+	width: auto;
+}
+
+.resize-h-75{
+	height: 75px;
 	width: auto;
 }
 
@@ -55,6 +64,11 @@ body{
 
 .resize-w-50{
 	width: 50px;
+	height: auto;
+}
+
+.resize-w-75{
+	width: 75px;
 	height: auto;
 }
 
@@ -84,6 +98,10 @@ body{
 	font-size: 20px;
 }
 
+.sz16{
+	font-size: 16px;
+}
+
 .sz12{
 	font-size: 12px;
 }
@@ -93,15 +111,54 @@ body{
 	margin-top: 5px;
 }
 
+.margin-5{
+	margin: 5px;
+}
+
 .wrap{
 	margin: 0px;
 	padding: 0px;
+}
+
+.left-0{
+	margin-left: 0px;
+}
+
+.left-15{
+	margin-left: -15px;
 }
 
 .left-30{
 	margin-left: -30px;
 }
 
+.left-50{
+	margin-left: -50px;
+}
+
+.right-15{
+	margin-right: 15px;
+}
+
+.top-7{
+	margin-top: 7px;
+}
+
+.top-15{
+	margin-top: 15px;
+}
+
+.bottom-7{
+	margin-bottom: 7px;
+}
+
+.bottom-15{
+	margin-bottom: 15px;
+}
+
+.margin-5-10{
+	margin: 5px 10px;
+}
 
 .float-left{
 	float: left;
