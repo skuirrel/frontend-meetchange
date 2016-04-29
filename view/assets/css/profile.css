@@ -211,10 +211,45 @@ img.float-left{
 }
 
 .add-attachments{
-	margin: 20px 0px;
+	margin-top: 20px;
+	margin-bottom: 7px;
 }
 
-.btn-3{
+/* primary button */
+.btn-1{
+	background-color: #ff7f50;
+	color: #fff;
+	border-radius: 6px;
+	padding: 7px 20px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.btn-1:hover, .btn-1:focus, .btn-1:active{
+	background-color: #EB6534;
+	color: #fff;
+	/*color:  #514444;*/
+}
+
+
+/* secondary button */
+.btn-2{
+	background-color: #c6bba2;
+	color: #fff;
+	border-radius: 6px;
+	padding: 7px 20px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.btn-2:hover, .btn-2:focus, .btn-2:active{
+	background-color: #B5A98F;
+	color: #fff;
+}
+
+
+/* button with icon */
+.btn-3.gry{
 	background-color: #ddd;
 	border-radius: 6px;
 	padding: 2px 8px;
@@ -222,7 +257,7 @@ img.float-left{
 	font-size: 13px;
 }
 
-.btn-3:hover{
+.btn-3.gry:hover, .btn-3.gry:focus, .btn-3.gry:active{
 	background-color: #49b979;
 	color: #fff;
 }
@@ -230,12 +265,26 @@ img.float-left{
 .btn-3.org{
 	background-color: #ff7f50;
 	color: #fff;
+	padding: 2px 8px;
 }
 
-.btn-3.org:hover{
-/*	background-color: #514444;
-	color: #fff;*/
-	color:  #514444;
+.btn-3.org:hover, .btn-3.org:focus, .btn-3.org:active{
+	background-color: #EB6534;
+	color: #fff;
+	/*color:  #514444;*/
+}
+
+/* big button */
+.btn-4{
+	background-color: #ff7f50;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+.btn-4:hover, .btn-4:focus, .btn-4:active{
+	background-color: #EB6534;
+	color: #fff;
 }
 
 .btn > i{
@@ -246,8 +295,53 @@ img.float-left{
 	vertical-align: super;
 }
 
+.panel-edit{
+	color: #c6bba2;
+	float: right;
+	position: relative;
+	z-index: 99;
+	font-size: 26px !important;
+	margin-right: 10px;
+}
+
+.panel-edit .flaticon-pencil124:hover{
+	cursor: pointer;
+	color: #B5A98F;
+}
+
+.panel-edit .fa{
+	font-size: 16px;
+	margin: 0px 5px;
+}
+
+.panel-edit > .fa.fa-plus:hover, .panel-edit > .fa.fa-pencil:hover{
+	cursor: pointer;
+	color: #B5A98F;	
+}
+
+.panel-edit > .fa.fa-arrows-v:hover{
+	cursor: move;
+	color: #B5A98F;	
+}
+
+.lihat-lebih-banyak{
+	height: auto;
+    margin-bottom: 25px;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.lihat-lebih-lanjut{
+	cursor: pointer;
+}
+
 .add-attachments-expand{
 	height: 125px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .add-attachments-expand > div{
@@ -262,30 +356,15 @@ img.float-left{
 	margin-top: 5px;
 }
 
-.btn-1{
-	background-color: #ff7f50;
-	color: #fff;
-	border-radius: 6px;
-	padding: 7px 20px;
-	text-align: center;
-	font-size: 13px;
-}
-
-.btn-2{
-	background-color: #c6bba2;
-	color: #fff;
-	border-radius: 6px;
-	padding: 7px 20px;
-	text-align: center;
-	font-size: 13px;
-}
-
 .panel-body-expand{
 	padding-bottom: 25px;
+	/*display: none;*/
 }
 
-.organisasi-item, .content-item{
-	padding-bottom: 15px;
+.content-item{
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	/*border-bottom: 1px solid #cccccc;*/
 }
 
@@ -300,21 +379,6 @@ img.float-left{
 	margin: 0px -15px;
 }
 
-/*.content-item > div > .desc{
-	display: block; /* Fallback for non-webkit
-  display: -webkit-box;
-  max-width: 300px;
-  height: 67.2px;  Fallback for non-webkit 
-  margin: 0 auto;
-  font-size: 14;
-  line-height: 1.2;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}*/
-
 .tag-karya{
 	margin-bottom: 10px;
 }
-
