@@ -128,6 +128,10 @@ body{
 	margin-left: -15px;
 }
 
+.left-20{
+	margin-left: -20px;
+}
+
 .left-30{
 	margin-left: -30px;
 }
@@ -181,7 +185,33 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+.box-img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.box-img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.box-img img.portrait {
+  width: 100% !important;
+  height: auto;
+}
 
+.img-float-left{
+	float: left;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-bottom: 8px;
+}
 
 /* EMBEDED FONTS */
 @font-face {

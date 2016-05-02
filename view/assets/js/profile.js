@@ -124,7 +124,9 @@ $(document).ready(function() {
 	});
 
 	function lihatLebihLanjut(id){
-		$("#panel-proyek > div > #"+id+" > .lebih-lanjut").slideToggle();
+		$(".panel-body > #"+id+" > .lebih-lanjut").slideToggle();
 	}
     /* END OF LIHAT LEBIH LANJUT */
+
+
 })
