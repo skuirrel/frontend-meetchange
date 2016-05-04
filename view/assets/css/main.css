@@ -86,6 +86,86 @@ body{
 	text-align: center;
 }
 
+/* primary button */
+.btn-1{
+	background-color: #ff7f50;
+	color: #fff;
+	border-radius: 6px;
+	padding: 7px 20px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.btn-1:hover, .btn-1:focus, .btn-1:active{
+	background-color: #EB6534;
+	color: #fff;
+	/*color:  #514444;*/
+}
+
+
+/* secondary button */
+.btn-2{
+	background-color: #c6bba2;
+	color: #fff;
+	border-radius: 6px;
+	padding: 7px 20px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.btn-2:hover, .btn-2:focus, .btn-2:active{
+	background-color: #B5A98F;
+	color: #fff;
+}
+
+
+/* button with icon */
+.btn-3.gry{
+	background-color: #ddd;
+	border-radius: 6px;
+	padding: 2px 8px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.btn-3.gry:hover, .btn-3.gry:focus, .btn-3.gry:active{
+	background-color: #49b979;
+	color: #fff;
+}
+
+.btn-3.org{
+	background-color: #ff7f50;
+	color: #fff;
+	padding: 2px 8px;
+}
+
+.btn-3.org:hover, .btn-3.org:focus, .btn-3.org:active{
+	background-color: #EB6534;
+	color: #fff;
+	/*color:  #514444;*/
+}
+
+/* big button */
+.btn-4{
+	background-color: #ff7f50;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+.btn-4:hover, .btn-4:focus, .btn-4:active{
+	background-color: #EB6534;
+	color: #fff;
+}
+
+.btn > i{
+	margin-left: -20px;
+}
+
+.btn > span{
+	vertical-align: super;
+}
+
 .falink{
 	font-size: 20px;
 }
@@ -126,6 +206,10 @@ body{
 
 .left-15{
 	margin-left: -15px;
+}
+
+.left--15{
+	margin-left: 15px;
 }
 
 .left-20{
@@ -202,6 +286,27 @@ button::-moz-focus-inner {
           transform: translate(-50%,-50%);
 }
 .box-img img.portrait {
+  width: 100% !important;
+  height: auto;
+}
+
+.box-img-25 {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+.box-img-25 img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.box-img-25 img.portrait {
   width: 100% !important;
   height: auto;
 }

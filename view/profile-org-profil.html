@@ -7,6 +7,7 @@
 	<link href="assets/css/font-awesome.css" type="text/css" rel="stylesheet"/>
 	<link href="assets/css/profile.css" type="text/css" rel="stylesheet"/>
 	<link href="assets/css/flaticon.css" type="text/css" rel="stylesheet"/> 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <body>
@@ -210,8 +211,13 @@
 
 			<!-- CONTENT -->
 			<div class="col-md-5">
-				<!-- SIAPA KAMI VIEW BY OTHERS-->
-				<div class="content-panel panel panel-default">
+				<!-- SIAPA KAMI -->
+				<div class="content-panel panel panel-default" id="panel-siapakami">
+					<!-- tambahin untuk view by me -->
+					<div class="panel-edit">
+						<i class="flaticon-pencil124" id="edit-1"></i>
+					</div>
+					<!-- end of tambahan untuk view by me -->
 					<div class="bigpanel-heading brown">Siapa Kami</div>
 					<div class="panel-body">
 						<div class="content-item">
@@ -226,27 +232,92 @@
 				</div>
 
 				<!-- APA YANG KAMI LAKUKAN -->
-				<div class="content-panel panel panel-default">
+				<div class="content-panel panel panel-default" id="panel-yangkamilakukan">
+					<!-- tambahin untuk view by me -->
+					<div class="panel-edit">
+						<i class="fa fa-plus" aria-hidden="true" id="add-2"></i>
+						<i class="fa fa-pencil" aria-hidden="true" id="edit-2"></i>
+						<i class="fa fa-arrows-v" aria-hidden="true" id="drag-2"></i>
+					</div>
+					<!-- end of tambahan untuk view by me -->
 					<div class="bigpanel-heading brown">Apa yang Kami Lakukan</div>
 					<div class="panel-body">
 						<!-- if there's no pic -->
-						<div class="content-item">
+						<div class="content-item" id="id-whatwedo-1">
 							<div class="row">
 								<div class="col-md-12">
-									<div class="sz16 bottom-7"><b>Desain Entri Data</b></div>
+									<div class="sz16 bottom-7"><b>Desain Entri Data</b>
+										<a href="" class="endorse-this"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+									</div>
+								</div>
+								<div class="col-md-12">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								</div>
+								<div class="col-md-12">
+									<ul class="left-35 float-right">
+										<li class="coll-img-sm">
+											<div class="box-img-25"><a href="">
+												<img src="assets/img/blog.jpg" />
+											</a></div>
+										</li>
+										<li class="coll-img-sm">
+											<div class="box-img-25"><a href="">
+												<img src="assets/img/ver.jpg" class="portrait" />
+											</a></div>
+										</li>
+										<li class="coll-img-sm">
+											<div class="box-img-25"><a href="">
+												<img src="assets/img/blog.jpg" />
+											</a></div>
+										</li>
+										<li class="coll-img-sm">
+											<div class="box-img-25"><a href="">
+												<img src="assets/img/ver.jpg" class="portrait" />
+											</a></div>
+										</li>
+										<!-- if more than 4 people -->
+										<li class="coll-img-sm">
+											<a href="" class="view-more-people">+26</a>
+										</li>
+										<!-- end if -->
+									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="line"></div>
-						<div class="content-item">
+						<div class="content-item" id="id-whatwedo-2">
 							<div class="row">
 								<div class="col-md-12">
-									<div class="sz16 bottom-7"><b>Studi Berorientasi Kebiajakan</b></div>
+									<div class="sz16 bottom-7"><b>Studi Berorientasi Kebijakan</b>
+										<a href="" class="endorse-this endorsed"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+									</div>
+								</div>
+								<div class="col-md-12">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								</div>
+								<div class="col-md-2">
 									<div class="top-15">
 										<img class="resize-w-200" src="assets/img/blog.jpg"/>
 									</div>
+								</div>
+								<div class="col-md-12">
+									<ul class="left-35 float-right">
+										<li class="coll-img-sm">
+											<div class="box-img-25"><a href="">
+												<img src="assets/img/blog.jpg" />
+											</a></div>
+										</li>
+										<li class="coll-img-sm">
+											<div class="box-img-25"><a href="">
+												<img src="assets/img/ver.jpg" class="portrait" />
+											</a></div>
+										</li>
+										<li class="coll-img-sm">
+											<div class="box-img-25"><a href="">
+												<img src="assets/img/blog.jpg" />
+											</a></div>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -254,104 +325,207 @@
 				</div>
 
 				<!-- PROYEK -->
-				<div class="content-panel panel panel-default">
+				<div class="content-panel panel panel-default" id="panel-proyek">
+					<!-- tambahin untuk view by me -->
+					<div class="panel-edit">
+						<i class="fa fa-plus" aria-hidden="true" id="add-3"></i>
+						<i class="fa fa-pencil" aria-hidden="true" id="edit-3"></i>
+						<i class="fa fa-arrows-v" aria-hidden="true" id="drag-3"></i>
+					</div>
+					<!-- end of tambahan untuk view by me -->
 					<div class="bigpanel-heading brown">Proyek</div>
 					<div class="panel-body">
-						<div class="content-item">
+						<div class="content-item" id="id-proyek-1">
 							<div class="row">
-								<div class="col-md-5">
-									<div class="">
-										<img class="resize-w-200" src="assets/img/blog.jpg"/>
+								<div class="wrap-txt-img">
+									<div class="box-img img-float-left">
+										<img src="assets/img/blog.jpg" />
 									</div>
-								</div>
-								<div class="col-md-7 desc">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</div>
-							<div class="row">
-								<div class="sz12 orange float-right">Lihat lebih lanjut</div>
-							</div>
-						</div>
-						<div class="line"></div>
-						<div class="content-item">
-							<div class="row">
-								<div class="col-md-5">
-									<div class="">
-										<img class="resize-w-200" src="assets/img/blog.jpg"/>
-									</div>
-								</div>
-								<div class="col-md-7 desc">
 									<div class="sz16"><b>Master Plan Sistem Partisipasi Publik Indonesia</b></div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris.
+									<br style="clear:both" />
 								</div>
 							</div>
-							<div class="row top-15">
+							<div class="row top-15 lebih-lanjut">
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-profile29"></i></div>
+									<div class="col-md-2 left-35"><i class="flaticon-profile29"></i></div>
 									<div class="col-md-10 no-margin left-30">Kreanovator</div>
 								</div>
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-calendar1"></i></div>
+									<div class="col-md-2 left-35"><i class="flaticon-calendar1"></i></div>
 									<div class="col-md-10 no-margin left-30">Juni 2015 - Sekarang</div>
 								</div>
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-location67"></i></div>
-									<div class="col-md-10 no-margin left-30">Tebet, Jakarta Selatanr</div>
+									<div class="col-md-2 left-35"><i class="flaticon-location67"></i></div>
+									<div class="col-md-10 no-margin left-30">Tebet, Jakarta Selatan</div>
 								</div>
-								<div class="col-md-12 margin-5-10">
+								<div class="col-md-12 top-7">
 									Label: &nbsp;&nbsp;
 									<span class="label label-default bg-lightgrey brown">sanitasi</span>
 									<span class="label label-default bg-lightgrey brown">air</span>
 								</div>
-								<div class="col-md-12 margin-5-10">
+								<div class="col-md-12 top-7">
 									Kebutuhan: &nbsp;&nbsp;
 									<span class="label label-default bg-lightgrey brown">Fasilitator</span>
 									<span class="label label-default bg-lightgrey brown">Dana</span>
 								</div>
-								<div class="col-md-12 top-15">
+								<!-- tambahin untuk view by others -->
+								<div class="col-md-12 top-15 bottom-15">
 									<button class="btn btn-4">BANTU PROYEK INI</button>
 								</div>
+								<!-- end of tambahan view by others -->
+							</div>
+							<div class="row">
+								<div class="sz12 orange float-right lihat-lebih-lanjut">Lihat lebih lanjut</div>
 							</div>
 						</div>
+						<div class="line"></div>
+						<div class="content-item" id="id-proyek-2">
+							<div class="row">
+								<div class="wrap-txt-img">
+									<div class="box-img img-float-left">
+										<img src="assets/img/ver.jpg" class="portrait"/>
+									</div>
+									<div class="sz16"><b>Buku Sekolah untuk Desa Sentosa</b></div>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris.
+									<br style="clear:both" />
+								</div>
+							</div>
+							<div class="row top-15 lebih-lanjut">
+								<div class="col-md-12">
+									<div class="col-md-2 left-35"><i class="flaticon-profile29"></i></div>
+									<div class="col-md-10 no-margin left-30">Kreanovator</div>
+								</div>
+								<div class="col-md-12">
+									<div class="col-md-2 left-35"><i class="flaticon-calendar1"></i></div>
+									<div class="col-md-10 no-margin left-30">Juni 2015 - Sekarang</div>
+								</div>
+								<div class="col-md-12">
+									<div class="col-md-2 left-35"><i class="flaticon-location67"></i></div>
+									<div class="col-md-10 no-margin left-30">Tebet, Jakarta Selatanr</div>
+								</div>
+								<div class="col-md-12 top-7">
+									Label: &nbsp;&nbsp;
+									<span class="label label-default bg-lightgrey brown">sanitasi</span>
+									<span class="label label-default bg-lightgrey brown">air</span>
+								</div>
+								<div class="col-md-12 top-7">
+									Kebutuhan: &nbsp;&nbsp;
+									<span class="label label-default bg-lightgrey brown">Fasilitator</span>
+									<span class="label label-default bg-lightgrey brown">Dana</span>
+								</div>
+								<!-- tambahin untuk view by others -->
+								<div class="col-md-12 top-15 bottom-15">
+									<button class="btn btn-4">BANTU PROYEK INI</button>
+								</div>
+								<!-- end of tambahan view by others -->
+							</div>
+							<div class="row">
+								<div class="sz12 orange float-right lihat-lebih-lanjut">Lihat lebih lanjut</div>
+							</div>
+						</div>
+						<div class="lebih-banyak">
+							<div class="line"></div>
+							<div class="content-item" id="id-proyek-3">
+							<div class="row">
+								<div class="wrap-txt-img">
+									<div class="box-img img-float-left">
+										<img src="assets/img/ver.jpg" class="portrait"/>
+									</div>
+									<div class="sz16"><b>Master Plan Sistem Partisipasi Publik Indonesia</b></div>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris.
+									<br style="clear:both" />
+								</div>
+							</div>
+							<div class="row top-15 lebih-lanjut">
+								<div class="col-md-12">
+									<div class="col-md-2 left-35"><i class="flaticon-profile29"></i></div>
+									<div class="col-md-10 no-margin left-30">Kreanovator</div>
+								</div>
+								<div class="col-md-12">
+									<div class="col-md-2 left-35"><i class="flaticon-calendar1"></i></div>
+									<div class="col-md-10 no-margin left-30">Juni 2015 - Sekarang</div>
+								</div>
+								<div class="col-md-12">
+									<div class="col-md-2 left-35"><i class="flaticon-location67"></i></div>
+									<div class="col-md-10 no-margin left-30">Tebet, Jakarta Selatanr</div>
+								</div>
+								<div class="col-md-12 top-7">
+									Label: &nbsp;&nbsp;
+									<span class="label label-default bg-lightgrey brown">sanitasi</span>
+									<span class="label label-default bg-lightgrey brown">air</span>
+								</div>
+								<div class="col-md-12 top-7">
+									Kebutuhan: &nbsp;&nbsp;
+									<span class="label label-default bg-lightgrey brown">Fasilitator</span>
+									<span class="label label-default bg-lightgrey brown">Dana</span>
+								</div>
+								<!-- tambahin untuk view by others -->
+								<div class="col-md-12 top-15 bottom-15">
+									<button class="btn btn-4">BANTU PROYEK INI</button>
+								</div>
+								<!-- end of tambahan view by others -->
+							</div>
+							<div class="row">
+								<div class="sz12 orange float-right lihat-lebih-lanjut">Lihat lebih lanjut</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<!-- if there's more than 2 items -->
+					<div class="lihat-lebih-banyak bg-lightgrey">
+						Lihat lebih banyak <i class="fa fa-angle-down" aria-hidden="true"></i>
 					</div>
 				</div>
 
 				<!-- PENAWARAN -->
-				<div class="content-panel panel panel-default">
+				<div class="content-panel panel panel-default" id="panel-penawaran">
+					<!-- tambahin untuk view by me -->
+					<div class="panel-edit">
+						<i class="fa fa-plus" aria-hidden="true" id="add-4"></i>
+						<i class="fa fa-pencil" aria-hidden="true" id="edit-4"></i>
+						<i class="fa fa-arrows-v" aria-hidden="true" id="drag-4"></i>
+					</div>
+					<!-- end of tambahan untuk view by me -->
 					<div class="bigpanel-heading brown">Penawaran</div>
 					<div class="panel-body">
-						<div class="content-item">
+						<!-- if there's no picture -->
+						<div class="content-item" id="id-penawaran-1">
 							<div class="row">
-								<!-- if there's no picture -->
-								<div class="col-md-12 desc">
+								<div class="wrap-txt-img">
 									<div class="sz16"><b>Pembicara Bidang Kepemimpinan dan Inovasi Sosial</b></div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris.
+									<br style="clear:both" />
 								</div>
 							</div>
-							<div class="row top-15">
+							<div class="row top-7 bottom-7 lebih-lanjut">
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-profile29"></i></div>
+									<div class="col-md-2 left-35"><i class="flaticon-profile29"></i></div>
 									<div class="col-md-10 no-margin left-30">Kreanovator</div>
 								</div>
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-calendar1"></i></div>
+									<div class="col-md-2 left-35"><i class="flaticon-calendar1"></i></div>
 									<div class="col-md-10 no-margin left-30">Juni 2015 - Sekarang</div>
 								</div>
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-location67"></i></div>
+									<div class="col-md-2 left-35"><i class="flaticon-location67"></i></div>
 									<div class="col-md-10 no-margin left-30">Tebet, Jakarta Selatanr</div>
 								</div>
-								<div class="col-md-12 margin-5-10">
+								<div class="col-md-12 top-7">
 									Label:
+									<span class="label label-default bg-lightgrey brown">sanitasi</span>
+									<span class="label label-default bg-lightgrey brown">air</span>
 								</div>
-								<div class="col-md-12 margin-5-10">
+								<div class="col-md-12 top-7">
 									Penawaran: 
+									<span class="label label-default bg-lightgrey brown">Fasilitator</span>
+									<span class="label label-default bg-lightgrey brown">Dana</span>
 								</div>
-								<div class="col-md-12 margin-5-10">
+								<div class="col-md-12 top-7">
 									Penerima: 
 								</div>
-								<div class="col-md-12 margin-5-10">
-									<div class="col-md-6 link-orange">
+								<div class="col-md-12 top-7">
+									<div class="col-md-6 link-orange bottom-7">
 										<a href="#">
 											<div class="col-md-4 left-30">
 												<img class="resize-w-50" src="assets/img/pimnas.jpeg">
@@ -362,7 +536,7 @@
 											</div>
 										</a>
 									</div> 
-									<div class="col-md-6 link-orange">
+									<div class="col-md-6 link-orange bottom-7">
 										<a href="#">
 											<div class="col-md-4 left-30">
 												<img class="resize-w-50" src="assets/img/pimnas.jpeg">
@@ -374,16 +548,152 @@
 										</a>
 									</div> 
 								</div>
-								<div class="col-md-12 top-15">
-									<button class="btn btn-4">DAPATKAN PENAWARAN</button>
+								<!-- tambahin untuk view by others -->
+									<div class="col-md-12 top-15 bottom-15">
+										<button class="btn btn-4">DAPATKAN PENAWARAN</button>
+									</div>
+									<!-- end of tambahan view by others -->
+							</div>
+							<div class="row">
+								<div class="sz12 orange float-right lihat-lebih-lanjut">Lihat lebih lanjut</div>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="content-item" id="id-penawaran-2">
+								<div class="row">
+									<div class="wrap-txt-img">
+										<div class="box-img img-float-left">
+											<img src="assets/img/blog.jpg" />
+										</div>
+										<div class="sz16"><b>Dana untuk Pendidikan</b></div>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris.
+										<br style="clear:both" />
+									</div>
+								</div>
+								<div class="row top-7 bottom-7 lebih-lanjut">
+									<div class="col-md-12">
+										<div class="col-md-2 left-35"><i class="flaticon-profile29"></i></div>
+										<div class="col-md-10 no-margin left-30">Kreanovator</div>
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-2 left-35"><i class="flaticon-calendar1"></i></div>
+										<div class="col-md-10 no-margin left-30">Juni 2015 - Sekarang</div>
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-2 left-35"><i class="flaticon-location67"></i></div>
+										<div class="col-md-10 no-margin left-30">Tebet, Jakarta Selatanr</div>
+									</div>
+									<div class="col-md-12 top-7">
+										Label:
+										<span class="label label-default bg-lightgrey brown">sanitasi</span>
+										<span class="label label-default bg-lightgrey brown">air</span>
+									</div>
+									<div class="col-md-12 top-7">
+										Penawaran: 
+										<span class="label label-default bg-lightgrey brown">Fasilitator</span>
+										<span class="label label-default bg-lightgrey brown">Dana</span>
+									</div>
+									<div class="col-md-12 top-7">
+										Penerima: (Belum ada)
+									</div>
+									<!-- tambahin untuk view by others -->
+									<div class="col-md-12 top-15 bottom-15">
+										<button class="btn btn-4">DAPATKAN PENAWARAN</button>
+									</div>
+									<!-- end of tambahan view by others -->
+								</div>
+								<div class="row">
+								<div class="sz12 orange float-right lihat-lebih-lanjut">Lihat lebih lanjut</div>
+							</div>
+							</div>
+						<div class="lebih-banyak">
+							<div class="line"></div>
+							<!-- if there's no picture -->
+							<div class="content-item" id="id-penawaran-3">
+								<div class="row">
+									<div class="wrap-txt-img">
+										<div class="sz16"><b>Pembicara Bidang Kepemimpinan dan Inovasi Sosial</b></div>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris.
+										<br style="clear:both" />
+									</div>
+								</div>
+								<div class="row top-7 bottom-7 lebih-lanjut">
+									<div class="col-md-12">
+										<div class="col-md-2 left-35"><i class="flaticon-profile29"></i></div>
+										<div class="col-md-10 no-margin left-30">Kreanovator</div>
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-2 left-35"><i class="flaticon-calendar1"></i></div>
+										<div class="col-md-10 no-margin left-30">Juni 2015 - Sekarang</div>
+									</div>
+									<div class="col-md-12">
+										<div class="col-md-2 left-35"><i class="flaticon-location67"></i></div>
+										<div class="col-md-10 no-margin left-30">Tebet, Jakarta Selatanr</div>
+									</div>
+									<div class="col-md-12 top-7">
+										Label:
+										<span class="label label-default bg-lightgrey brown">sanitasi</span>
+										<span class="label label-default bg-lightgrey brown">air</span>
+									</div>
+									<div class="col-md-12 top-7">
+										Penawaran: 
+										<span class="label label-default bg-lightgrey brown">Fasilitator</span>
+										<span class="label label-default bg-lightgrey brown">Dana</span>
+									</div>
+									<div class="col-md-12 top-7">
+										Penerima: 
+									</div>
+									<div class="col-md-12 top-7">
+										<div class="col-md-6 link-orange bottom-7">
+											<a href="#">
+												<div class="col-md-4 left-30">
+													<img class="resize-w-50" src="assets/img/pimnas.jpeg">
+												</div>
+												<div class="col-md-8 wrap">
+													<b>UI to PIMNAS</b><br>
+													<span  class="sz12 grey">Organisasi Masyarakat</span>
+												</div>
+											</a>
+										</div> 
+										<div class="col-md-6 link-orange bottom-7">
+											<a href="#">
+												<div class="col-md-4 left-30">
+													<img class="resize-w-50" src="assets/img/pimnas.jpeg">
+												</div>
+												<div class="col-md-8 wrap">
+													<b>UI to PIMNAS</b><br>
+													<span class="sz12 grey">Organisasi Masyarakat</span>
+												</div>
+											</a>
+										</div> 
+									</div>
+									<!-- tambahin untuk view by others -->
+									<div class="col-md-12 top-15 bottom-15">
+										<button class="btn btn-4">DAPATKAN PENAWARAN</button>
+									</div>
+									<!-- end of tambahan view by others -->
+								</div>
+								<div class="row">
+									<div class="sz12 orange float-right lihat-lebih-lanjut">Lihat lebih lanjut</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- if there's more than 2 items -->
+					<div class="lihat-lebih-banyak bg-lightgrey">
+						Lihat lebih banyak <i class="fa fa-angle-down" aria-hidden="true"></i>
+					</div>
 				</div>
 
 				<!-- DAMPAK -->
-				<div class="content-panel panel panel-default">
+				<div class="content-panel panel panel-default" id="panel-dampak">
+					<!-- tambahin untuk view by me -->
+					<div class="panel-edit">
+						<i class="fa fa-plus" aria-hidden="true" id="add-5"></i>
+						<i class="fa fa-pencil" aria-hidden="true" id="edit-5"></i>
+						<i class="fa fa-arrows-v" aria-hidden="true" id="drag-5"></i>
+					</div>
+					<!-- end of tambahan untuk view by me -->
 					<div class="bigpanel-heading brown">Dampak</div>
 					<div class="panel-body">
 						<div class="content-item">
@@ -394,19 +704,19 @@
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
 								</div>
 							</div>
-							<div class="row top-15">
+							<div class="row top-7">
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-calendar1"></i></div>
+									<div class="col-md-2 left-35"><i class="flaticon-calendar1"></i></div>
 									<div class="col-md-10 no-margin left-30">Juni 2015 - Sekarang</div>
 								</div>
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-location67"></i></div>
+									<div class="col-md-2 left-35"><i class="flaticon-location67"></i></div>
 									<div class="col-md-10 no-margin left-30">Cijeruk, Kabupate Cianjur</div>
 								</div>
-								<div class="col-md-12 margin-5-10">
+								<div class="col-md-12 top-7">
 									Kolaborator: 
 								</div>
-								<div class="col-md-12 margin-5-10">
+								<div class="col-md-12 top-7">
 									<div class="col-md-6 link-orange">
 										<a href="#">
 											<div class="col-md-4 left-30">
@@ -436,47 +746,27 @@
 				</div>
 
 				<!-- PENGHARGAAN -->
-				<div class="content-panel panel panel-default">
+				<div class="content-panel panel panel-default" id="panel-penghargaan">
+					<!-- tambahin untuk view by me -->
+					<div class="panel-edit">
+						<i class="fa fa-plus" aria-hidden="true" id="add-6"></i>
+						<i class="fa fa-pencil" aria-hidden="true" id="edit-6"></i>
+						<i class="fa fa-arrows-v" aria-hidden="true" id="drag-6"></i>
+					</div>
+					<!-- end of tambahan untuk view by me -->
 					<div class="bigpanel-heading brown">Penghargaan</div>
 					<div class="panel-body">
-						<!-- if there's no pic -->
 						<div class="content-item">
 							<div class="row">
-								<div class="col-md-12">
-									<div class="sz16 bottom-7"><b>Penerima Penghargaan Pemimpi Muda Jalan Pemimpin</b></div>
-									<div class="col-md-12">
-										<div class="col-md-2 left-50"><i class="flaticon-calendar1"></i></div>
-										<div class="col-md-10 no-margin left-30">September 2014</div>
+								<div class="wrap-txt-img">
+									<div class="box-img img-float-left">
+										<img src="assets/img/blog.jpg" />
 									</div>
-									<div class="col-md-12">
-										<div class="col-md-2 left-50"><i class="flaticon-profile29"></i></div>
-										<div class="col-md-10 no-margin left-30 bottom-7">General Electric</div>
-									</div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-								</div>
-							</div>
-						</div>
-						<div class="line"></div>
-						<div class="content-item">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="sz16 bottom-15"><b>Mahasiswa Berprestasi Fasilkom UI 2014</b></div>
-								</div>
-								<div class="col-md-5">
-									<div class="">
-										<img class="resize-w-200" src="assets/img/blog.jpg"/>
-									</div>
-								</div>
-								<div class="col-md-7 desc">
-									<div class="col-md-12">
-										<div class="col-md-2 left-50"><i class="flaticon-calendar1"></i></div>
-										<div class="col-md-10 no-margin">April 2014</div>
-									</div>
-									<div class="col-md-12">
-										<div class="col-md-2 left-50"><i class="flaticon-profile29"></i></div>
-										<div class="col-md-10 no-margin bottom-7">Fakultas Ilmu Komputer, Universitas Indonesia</div>
-									</div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+									<div class="sz16"><b>Penerima Sustainable Development Awards</b></div>
+									<i class="flaticon-calendar1 left-20"></i>  September 2014<br>
+									<i class="flaticon-profile29 left-20"></i>  Universitas Indonesia<br>
+									<div class="top-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua enim ad minim  veniam.</div>
+									<br style="clear:both" />
 								</div>
 							</div>
 						</div>
@@ -484,13 +774,20 @@
 				</div>
 
 				<!-- LIPUTAN MEDIA -->
-				<div class="content-panel panel panel-default">
+				<div class="content-panel panel panel-default" id="panel-media">
+					<!-- tambahin untuk view by me -->
+					<div class="panel-edit">
+						<i class="fa fa-plus" aria-hidden="true" id="add-8"></i>
+						<i class="fa fa-pencil" aria-hidden="true" id="edit-8"></i>
+						<i class="fa fa-arrows-v" aria-hidden="true" id="drag-8"></i>
+					</div>
+					<!-- end of tambahan untuk view by me -->
 					<div class="bigpanel-heading brown">Liputan Media</div>
 					<div class="panel-body">
 						<div class="content-item">
 							<div class="row">
-								<div class="col-md-12">
-									<div class="sz16 bottom-7"><b>Mahasiswa UI Kumpulkan Stakeholder Publik di ICS 2015</b></div>
+								<div class="wrap-txt-img">
+									<div class="sz16"><b>Mahasiswa UI Kumpulkan Stakeholder Publik di ICS 2015</b></div>
 									<div class="col-md-12">
 										<div class="col-md-2 left-50"><i class="flaticon-calendar1"></i></div>
 										<div class="col-md-10 no-margin left-30">28 Juli 2015</div>
@@ -499,30 +796,34 @@
 										<div class="col-md-2 left-50"><i class="flaticon-sheet3"></i></div>
 										<div class="col-md-10 no-margin left-30 bottom-7">Media Indonesia</div>
 									</div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 									<div class="content-link top-7"><a href="#">Lihat selengkapnya</a></div>
+									<br style="clear:both" />
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<!-- PENDIDIKAN -->
-				<div class="content-panel panel panel-default">
-					<div class="bigpanel-heading brown">Pendidikan</div>
+				<!-- KEAHLIAN -->
+				<div class="content-panel panel panel-default" id="panel-rekomendasi">
+					<div class="bigpanel-heading brown">Rekomendasi</div>
 					<div class="panel-body">
 						<div class="content-item">
-							<div class="row">
+							<div class="row link-orange">
+								<a href="#">
+									<div class="col-md-2">
+										<img class="resize-w-50" src="assets/img/pimnas.jpeg">
+									</div>
+									<div class="col-md-10 left-15 wrap">
+										<b>UI to PIMNAS</b><br>
+										<span  class="sz12 grey">Organisasi Masyarakat</span>
+									</div>
+								</a>
+							</div>
+							<div class="row top-15">
 								<div class="col-md-12">
-									<div class="sz16 bottom-7"><b>Universitas Indonesia</b></div>
-									<div class="col-md-12">
-										<div class="col-md-2 left-50"><i class="flaticon-graduation1"></i></div>
-										<div class="col-md-10 no-margin left-30 bottom-7">Bachelor Degree, Computer Science</div>
-									</div>
-									<div class="col-md-12">
-										<div class="col-md-2 left-50"><i class="flaticon-calendar1"></i></div>
-										<div class="col-md-10 no-margin left-30">2010 - 2014</div>
-									</div>
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 								</div>
 							</div>
 						</div>
@@ -530,7 +831,7 @@
 				</div>
 
 				<!-- REKOMENDASI -->
-				<div class="content-panel panel panel-default">
+				<div class="content-panel panel panel-default" id="panel-rekomendasi">
 					<div class="bigpanel-heading brown">Rekomendasi</div>
 					<div class="panel-body">
 						<div class="content-item">
@@ -555,72 +856,119 @@
 				</div>
 
 				<!-- BERGABUNG -->
-				<div class="content-panel panel panel-default">
+				<div class="content-panel panel panel-default" id="panel-gabung">
+					<!-- tambahin untuk view by me -->
+					<div class="panel-edit">
+						<i class="fa fa-plus" aria-hidden="true" id="add-11"></i>
+						<i class="fa fa-pencil" aria-hidden="true" id="edit-11"></i>
+						<i class="fa fa-arrows-v" aria-hidden="true" id="drag-11"></i>
+					</div>
+					<!-- end of tambahan untuk view by me -->
 					<div class="bigpanel-heading brown">Bergabung</div>
 					<div class="panel-body">
-						<div class="content-item">
+						<div class="content-item" id="id-proyek-4">
 							<div class="sz16 tag-karya">Proyek</div>
 							<div class="row">
-								<div class="col-md-5">
-									<div class="">
-										<img class="resize-w-200" src="assets/img/blog.jpg"/>
+								<div class="wrap-txt-img">
+									<div class="box-img img-float-left">
+										<img src="assets/img/blog.jpg" />
 									</div>
-								</div>
-								<div class="col-md-7 desc">
 									<div class="sz16"><b>Master Plan Sistem Partisipasi Publik Indonesia</b></div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris.
+									<br style="clear:both" />
 								</div>
 							</div>
-							<div class="row top-15">
+							<div class="row top-15 lebih-lanjut">
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-profile29"></i></div>
+									<div class="col-md-2 left-35"><i class="flaticon-profile29"></i></div>
 									<div class="col-md-10 no-margin left-30">Kreanovator</div>
 								</div>
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-calendar1"></i></div>
+									<div class="col-md-2 left-35"><i class="flaticon-calendar1"></i></div>
 									<div class="col-md-10 no-margin left-30">Juni 2015 - Sekarang</div>
 								</div>
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-location67"></i></div>
-									<div class="col-md-10 no-margin left-30">Tebet, Jakarta Selatanr</div>
+									<div class="col-md-2 left-35"><i class="flaticon-location67"></i></div>
+									<div class="col-md-10 no-margin left-30">Tebet, Jakarta Selatan</div>
 								</div>
-								<div class="col-md-12 margin-5-10">
-									Label:
+								<div class="col-md-12 top-7">
+									Label: &nbsp;&nbsp;
+									<span class="label label-default bg-lightgrey brown">sanitasi</span>
+									<span class="label label-default bg-lightgrey brown">air</span>
 								</div>
-								<div class="col-md-12 margin-5-10">
-									Kebutuhan: 
+								<div class="col-md-12 top-7">
+									Kebutuhan: &nbsp;&nbsp;
+									<span class="label label-default bg-lightgrey brown">Fasilitator</span>
+									<span class="label label-default bg-lightgrey brown">Dana</span>
 								</div>
+							</div>
+							<div class="row">
+								<div class="sz12 orange float-right lihat-lebih-lanjut">Lihat lebih lanjut</div>
 							</div>
 						</div>
 						<div class="line"></div>
-						<div class="content-item">
+						<div class="content-item" id="id-penawaran-4">
 							<div class="sz16 tag-karya">Penawaran</div>
 							<div class="row">
-								<!-- if there's no picture -->
-								<div class="col-md-12 desc">
+								<div class="wrap-txt-img">
 									<div class="sz16"><b>Pembicara Bidang Kepemimpinan dan Inovasi Sosial</b></div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris.
+									<br style="clear:both" />
 								</div>
 							</div>
-							<div class="row top-15">
+							<div class="row top-7 bottom-7 lebih-lanjut">
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-profile29"></i></div>
+									<div class="col-md-2 left-35"><i class="flaticon-profile29"></i></div>
 									<div class="col-md-10 no-margin left-30">Kreanovator</div>
 								</div>
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-calendar1"></i></div>
+									<div class="col-md-2 left-35"><i class="flaticon-calendar1"></i></div>
 									<div class="col-md-10 no-margin left-30">Juni 2015 - Sekarang</div>
 								</div>
 								<div class="col-md-12">
-									<div class="col-md-2 left-30"><i class="flaticon-location67"></i></div>
+									<div class="col-md-2 left-35"><i class="flaticon-location67"></i></div>
 									<div class="col-md-10 no-margin left-30">Tebet, Jakarta Selatanr</div>
 								</div>
-								<div class="col-md-12 margin-5-10">
+								<div class="col-md-12 top-7">
 									Label:
+									<span class="label label-default bg-lightgrey brown">sanitasi</span>
+									<span class="label label-default bg-lightgrey brown">air</span>
 								</div>
-								<div class="col-md-12 margin-5-10">
+								<div class="col-md-12 top-7">
 									Penawaran: 
+									<span class="label label-default bg-lightgrey brown">Fasilitator</span>
+									<span class="label label-default bg-lightgrey brown">Dana</span>
 								</div>
+								<div class="col-md-12 top-7">
+									Penerima: 
+								</div>
+								<div class="col-md-12 top-7">
+									<div class="col-md-6 link-orange bottom-7">
+										<a href="#">
+											<div class="col-md-4 left-30">
+												<img class="resize-w-50" src="assets/img/pimnas.jpeg">
+											</div>
+											<div class="col-md-8 wrap">
+												<b>UI to PIMNAS</b><br>
+												<span  class="sz12 grey">Organisasi Masyarakat</span>
+											</div>
+										</a>
+									</div> 
+									<div class="col-md-6 link-orange bottom-7">
+										<a href="#">
+											<div class="col-md-4 left-30">
+												<img class="resize-w-50" src="assets/img/pimnas.jpeg">
+											</div>
+											<div class="col-md-8 wrap">
+												<b>UI to PIMNAS</b><br>
+												<span class="sz12 grey">Organisasi Masyarakat</span>
+											</div>
+										</a>
+									</div> 
+								</div>
+							</div>
+							<div class="row">
+								<div class="sz12 orange float-right lihat-lebih-lanjut">Lihat lebih lanjut</div>
 							</div>
 						</div>
 					</div>
@@ -628,6 +976,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="assets/js/profile.js" type="text/javascript"></script>
 </body>
 
 </html>

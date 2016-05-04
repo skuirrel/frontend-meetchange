@@ -67,12 +67,12 @@ $(document).ready(function() {
     function hoverPanel(div){
 		$(div).hover(
 		function () {
-			$(".panel-edit").show();
+			var id = $(this).get(0).id;
+			$("#"+id+" > .panel-edit").show();
 		}, 
 		function () {
 			$(".panel-edit").hide();
-		}
-		);
+		});
 	}
 
     $(".panel-edit").hide();
@@ -83,9 +83,13 @@ $(document).ready(function() {
     hoverPanel("#panel-karya");
     hoverPanel("#panel-penghargaan");
     hoverPanel("#panel-media");
+    hoverPanel("#panel-keahlian");
     hoverPanel("#panel-pendidikan");
     hoverPanel("#panel-rekomendasi");
     hoverPanel("#panel-gabung");
+
+    hoverPanel("#panel-siapakami");
+    hoverPanel("#panel-yangkamilakukan");
     /* END OF HOVER PANEL */
 
 
@@ -121,6 +125,7 @@ $(document).ready(function() {
         }
 		var id = $(this).parent().parent().get(0).id;
 		lihatLebihLanjut(id);
+		lihatLebihLanjut2(id);
 	});
 
 	function lihatLebihLanjut(id){
@@ -128,5 +133,60 @@ $(document).ready(function() {
 	}
     /* END OF LIHAT LEBIH LANJUT */
 
+    /* LEBIH LANJUT INSIDE LEBIH BANYAK */
+    function lihatLebihLanjut2(id){
+		$(".panel-body > .lebih-banyak > #"+id+" > .lebih-lanjut").slideToggle();
+	}
+    /* END OF LEBIH LANJUT INSIDE LEBIH BANYAK */
+
+
+    /* HOVER ENDORSE BUTTON INDIVIDU */
+	$("[id^=id-keahlian]").hover(
+	function () {
+		var id = $(this).get(0).id;
+		if($("#"+id+" > div > .endorse-this").hasClass("endorsed")){
+			$("#"+id+" > div > .endorse-this").html('<i class="fa fa-times" aria-hidden="true"></i> Remove endorse</a>');
+		}
+		else{
+			$("#"+id+" > div > .endorse-this").html('<i class="fa fa-thumbs-up" aria-hidden="true"></i> Endorse</a>');
+			$("#"+id+" > div > .endorse-this").css("color", "#ff7f50");
+		}
+	},
+	function () {
+		var id = $(this).get(0).id;
+		if($("#"+id+" > div > .endorse-this").hasClass("endorsed")){
+			$("#"+id+" > div > .endorse-this").html('<i class="fa fa-thumbs-up" aria-hidden="true"></i></a>');
+		}
+		else{
+			$("#"+id+" > div > .endorse-this").html('<i class="fa fa-thumbs-up" aria-hidden="true"></i></a>');
+			$("#"+id+" > div > .endorse-this").css("color", "#ddd");
+		}
+	});
+    /* END OF HOVER ENDORSE BUTTON */
+
+
+    /* HOVER ENDORSE BUTTON ORGZ */
+	$("[id^=id-whatwedo]").hover(
+	function () {
+		var id = $(this).get(0).id;
+		if($("#"+id+" > div > div > div > .endorse-this").hasClass("endorsed")){
+			$("#"+id+" > div > div > div > .endorse-this").html('<i class="fa fa-times" aria-hidden="true"></i> <span class="sz12">Remove endorse</span></a>');
+		}
+		else{
+			$("#"+id+" > div > div > div > .endorse-this").html('<i class="fa fa-thumbs-up" aria-hidden="true"></i> <span class="sz12">Endorse</span></a>');
+			$("#"+id+"> div > div > div > .endorse-this").css("color", "#ff7f50");
+		}
+	},
+	function () {
+		var id = $(this).get(0).id;
+		if($("#"+id+" > div > div > div > .endorse-this").hasClass("endorsed")){
+			$("#"+id+" > div > div > div > .endorse-this").html('<i class="fa fa-thumbs-up" aria-hidden="true"></i></a>');
+		}
+		else{
+			$("#"+id+" > div > div > div > .endorse-this").html('<i class="fa fa-thumbs-up" aria-hidden="true"></i></a>');
+			$("#"+id+" > div > div > div > .endorse-this").css("color", "#ddd");
+		}
+	});
+    /* END OF HOVER ENDORSE BUTTON */
 
 })
