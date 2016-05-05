@@ -96,10 +96,14 @@ body{
 	font-size: 13px;
 }
 
-.btn-1:hover, .btn-1:focus, .btn-1:active{
+.btn-1:hover, .btn-1:active{
 	background-color: #EB6534;
 	color: #fff;
 	/*color:  #514444;*/
+}
+.btn-1:focus{
+	background-color: #ff7f50;
+	color: #fff;
 }
 
 
@@ -162,8 +166,13 @@ button.btn.btn-3.fa > i{
 	color: #fff;
 }
 
-.btn-4:hover, .btn-4:focus, .btn-4:active{
+.btn-4:hover, .btn-4:active{
 	background-color: #EB6534;
+	color: #fff;
+}
+
+.btn-4:focus{
+	background-color: #ff7f50;
 	color: #fff;
 }
 
@@ -231,6 +240,10 @@ button.btn.btn-3.fa > i{
 	margin-left: -30px;
 }
 
+.left--30{
+	margin-left: 30px;
+}
+
 .left-35{
 	margin-left: -35px;
 }
@@ -278,6 +291,10 @@ button.btn.btn-3.fa > i{
 .float-right{
 	float: right;
 	/*text-align: right;*/
+}
+
+.text-center{
+	text-align: center;
 }
 
 button, button:active, button:visited, button:focus, a, a:active, a:visited, a:focus {
@@ -349,6 +366,14 @@ button::-moz-focus-inner {
 
 .fol-numb{
 	line-height: 34px;
+}
+
+.gotham{
+	font-family: GothamRounded-Medium;
+}
+
+.proxima{
+	font-family: ProximaNovaReg;
 }
 
 /* EMBEDED FONTS */

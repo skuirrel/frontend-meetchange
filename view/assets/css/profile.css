@@ -39,15 +39,15 @@
 	font-family: GothamRounded-Medium;
 }
 
-ul.nav li.active, ul.nav li a:hover {
+ul.nav#profile-menu  li.active, ul.nav#profile-menu  li a:hover {
     background-color: #514444;
 }
 
-ul.nav li.active a, ul.nav li a:hover {
+ul.nav#profile-menu  li.active a, ul.nav#profile-menu  li a:hover {
     color: #ffffff;
 }
 
-ul.nav li a, .link-orange a {
+ul.nav#profile-menu  li a, .link-orange a {
     color: #514444;;
 }
 
@@ -214,7 +214,6 @@ img.float-left{
 	margin-top: 20px;
 	margin-bottom: 7px;
 }
-
 
 .panel-edit{
 	color: #c6bba2;
@@ -388,4 +387,40 @@ ul.left-35.float-right{
 	background-color: #ff7f50;
 	color: #fff;
 	margin-right: 10px;
+}
+
+.btn-cover > .btn.btn-3:hover, .btn-cover > .btn.btn-3:active, .btn-cover > .btn.btn-3:focus{
+	background-color: #EB6534;
+	color: #fff;
+}
+
+.content-tab{
+	border-radius: 0px 0px 8px 8px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding-top: 1px;
+	margin-top: 0px;
+}
+
+.penawaran-items > div{
+	padding: 15px;
+}
+
+.penawaran-items > .hovered{
+	background-color: #ddd;
+}
+
+.penawaran-items > .selected{
+	background-color: #ddd;
+	border: 2px solid #ff7f50;
+}
+
+[id^=bantu-] > ul > li > a, [id^=bantu-] > ul > li > a:hover{
+	color: #555;
+}
+
+.ul-form > li > a > span{
+	vertical-align: 2px;
+	margin-left: 5px;
 }
