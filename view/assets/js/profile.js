@@ -90,6 +90,12 @@ $(document).ready(function() {
 
     hoverPanel("#panel-siapakami");
     hoverPanel("#panel-yangkamilakukan");
+
+    hoverPanel("#panel-ringkasan");
+    hoverPanel("#panel-latarbelakang");
+    hoverPanel("#panel-solusi");
+    hoverPanel("#panel-sasaran");
+    hoverPanel("#panel-timeline");
     /* END OF HOVER PANEL */
 
 

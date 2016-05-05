@@ -109,7 +109,7 @@ ul.nav li a, .link-orange a {
 
 .content-panel.panel{
 	border-radius: 8px;
-	border: 1px solid #9c9587;
+	border: 1px solid #ccc;
 	margin: 15px 0px;
 }
 
@@ -119,11 +119,11 @@ ul.nav li a, .link-orange a {
 	/*border-bottom: none;*/
 }
 
-.panel-body > div > a{
+.panel-body > div > a, .panel-body > div > div > a{
 	color: #352b20;
 }
 
-.panel-body > div > a:hover, .news > span > a, .agenda-list > div > div > div > a:hover, .content-link > a {
+.panel-body > div > a:hover, .news > span > a, .agenda-list > div > div > div > a:hover, .content-link > a, .panel-body > div > div > a:hover {
 	color: #ff7f50;
 	text-decoration: none;
 }
@@ -255,6 +255,24 @@ img.float-left{
     cursor: pointer;
 }
 
+.lihat-lebih-banyak-sm{
+	height: auto;
+    margin-bottom: 25px;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.lihat-lebih-banyak-sm > a{
+	color: #352b20;
+}
+
+.lihat-lebih-banyak-sm > a:hover,.lihat-lebih-banyak-sm > a:active,.lihat-lebih-banyak-sm > a:focus{
+	text-decoration: none;
+}
+
 .lihat-lebih-lanjut{
 	cursor: pointer;
 }
@@ -344,4 +362,30 @@ img.float-left{
 
 ul.left-35.float-right{
 	margin-bottom: 2px !important;
+}
+
+.progress-bar-orange{
+	background-color: #ff7f50;
+}
+
+.progress-bar-blank{
+	background-color: rgba(0,0,0,0);
+}
+
+.progress-bar.progress-bar-blank{
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0);
+}
+
+.fol{
+	padding: 5px 0px;
+}
+
+.btn-cover > .btn.btn-3{
+	position: relative;
+	z-index: 11;
+	float: right;
+	margin-top: 200px;
+	background-color: #ff7f50;
+	color: #fff;
+	margin-right: 10px;
 }

@@ -145,6 +145,15 @@ body{
 	/*color:  #514444;*/
 }
 
+button.btn.btn-3.fa{
+	padding: 13px 20px;
+	font-size: 15px;
+	text-align: center;
+}
+button.btn.btn-3.fa > i{
+	margin-left: 0px;
+}
+
 /* big button */
 .btn-4{
 	background-color: #ff7f50;
@@ -159,11 +168,13 @@ body{
 }
 
 .btn > i{
-	margin-left: -20px;
+	margin-left: -22px;
 }
 
 .btn > span{
-	vertical-align: super;
+	/*vertical-align: super;*/
+	vertical-align: middle;
+	padding-bottom: 8px !important;
 }
 
 .falink{
@@ -232,12 +243,20 @@ body{
 	margin-right: 15px;
 }
 
+.right-50{
+	margin-right: 50px;
+}
+
 .top-7{
 	margin-top: 7px;
 }
 
 .top-15{
 	margin-top: 15px;
+}
+
+.top--15{
+	margin-top: -15px;
 }
 
 .bottom-7{
@@ -316,6 +335,20 @@ button::-moz-focus-inner {
 	margin-right: 15px;
 	margin-top: 5px;
 	margin-bottom: 8px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.vertical-line {
+    border-right: 1px solid #ccc;
+    padding-bottom: 15px;
+	margin-bottom: -15px;
+}
+
+.fol-numb{
+	line-height: 34px;
 }
 
 /* EMBEDED FONTS */
